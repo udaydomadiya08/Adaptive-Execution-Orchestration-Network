@@ -1,0 +1,167 @@
+{
+  "experiment": "AEON-1.76 bounded real wall-clock audit: digits target-free competence routing",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "seeds": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "rows": [
+    {
+      "seed": 7,
+      "n_test": 450,
+      "subset": 300,
+      "fixed_accuracy": [
+        0.9622222222222222,
+        0.9844444444444445,
+        0.9266666666666666
+      ],
+      "adaptive_accuracy_subset": 0.97,
+      "routes": [
+        84,
+        141,
+        75
+      ],
+      "fixed_ms_per_example_median": [
+        0.08737127666715121,
+        0.4200836883334584,
+        0.16524792833327714
+      ],
+      "adaptive_ms_per_example_median": 0.6910103233334061,
+      "fixed_batch_ms_median": [
+        26.21138300014536,
+        126.02510650003751,
+        49.57437849998314
+      ],
+      "adaptive_batch_ms_median": 207.3030970000218
+    },
+    {
+      "seed": 17,
+      "n_test": 450,
+      "subset": 300,
+      "fixed_accuracy": [
+        0.9644444444444444,
+        0.9644444444444444,
+        0.8711111111111111
+      ],
+      "adaptive_accuracy_subset": 0.9566666666666667,
+      "routes": [
+        99,
+        144,
+        57
+      ],
+      "fixed_ms_per_example_median": [
+        0.102704133333494,
+        0.37900404166596974,
+        0.17837171833358903
+      ],
+      "adaptive_ms_per_example_median": 0.6989845599999475,
+      "fixed_batch_ms_median": [
+        30.8112400000482,
+        113.70121249979093,
+        53.51151550007671
+      ],
+      "adaptive_batch_ms_median": 209.69536799998423
+    },
+    {
+      "seed": 27,
+      "n_test": 450,
+      "subset": 300,
+      "fixed_accuracy": [
+        0.9711111111111111,
+        0.9777777777777777,
+        0.9466666666666667
+      ],
+      "adaptive_accuracy_subset": 0.98,
+      "routes": [
+        128,
+        142,
+        30
+      ],
+      "fixed_ms_per_example_median": [
+        0.10349539333371165,
+        0.4066240666664574,
+        0.1658445850004379
+      ],
+      "adaptive_ms_per_example_median": 0.7304965283325752,
+      "fixed_batch_ms_median": [
+        31.048618000113493,
+        121.98721999993722,
+        49.75337550013137
+      ],
+      "adaptive_batch_ms_median": 219.14895849977256
+    },
+    {
+      "seed": 37,
+      "n_test": 450,
+      "subset": 300,
+      "fixed_accuracy": [
+        0.9688888888888889,
+        0.9733333333333334,
+        0.9133333333333333
+      ],
+      "adaptive_accuracy_subset": 0.9533333333333334,
+      "routes": [
+        116,
+        164,
+        20
+      ],
+      "fixed_ms_per_example_median": [
+        0.09010835833350939,
+        0.39616440666653335,
+        0.1879224750003535
+      ],
+      "adaptive_ms_per_example_median": 0.7245172800003274,
+      "fixed_batch_ms_median": [
+        27.032507500052816,
+        118.84932199996001,
+        56.37674250010605
+      ],
+      "adaptive_batch_ms_median": 217.35518400009823
+    },
+    {
+      "seed": 47,
+      "n_test": 450,
+      "subset": 300,
+      "fixed_accuracy": [
+        0.96,
+        0.9711111111111111,
+        0.9422222222222222
+      ],
+      "adaptive_accuracy_subset": 0.9833333333333333,
+      "routes": [
+        156,
+        131,
+        13
+      ],
+      "fixed_ms_per_example_median": [
+        0.0870818783323557,
+        0.39005613999961497,
+        0.15740464333324175
+      ],
+      "adaptive_ms_per_example_median": 0.668072521667303,
+      "fixed_batch_ms_median": [
+        26.12456349970671,
+        117.01684199988449,
+        47.22139299997252
+      ],
+      "adaptive_batch_ms_median": 200.4217565001909
+    }
+  ],
+  "mean_fixed_accuracy": [
+    0.9653333333333333,
+    0.9742222222222223,
+    0.9199999999999999
+  ],
+  "mean_adaptive_accuracy_subset": 0.9686666666666668,
+  "mean_fixed_ms_per_example": [
+    0.0941522080000444,
+    0.39838646866640676,
+    0.17095827000017988
+  ],
+  "mean_adaptive_ms_per_example": 0.7026162426667119,
+  "integrity": "Router trained only on router-split specialist correctness. Test labels are never used for routing or timing."
+}

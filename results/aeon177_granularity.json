@@ -1,0 +1,645 @@
+{
+  "experiment": "AEON-1.77 routing-granularity wall-clock audit",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "seeds": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "batch_sizes": [
+    1,
+    8,
+    32,
+    64,
+    128,
+    256
+  ],
+  "rows": [
+    {
+      "seed": 7,
+      "n_test": 450,
+      "fixed_accuracy": [
+        0.9622222222222222,
+        0.9844444444444445,
+        0.9266666666666666
+      ],
+      "fixed_total_ms_median": [
+        0.22259500019572442,
+        2.0481619999372924,
+        0.3635369998846727
+      ],
+      "rows": [
+        {
+          "batch_size": 1,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 365.990457999942,
+          "time_ms_per_example": 0.81331212888876,
+          "groups": 450,
+          "route_group_counts": [
+            120,
+            220,
+            110
+          ],
+          "route_example_counts": [
+            120,
+            220,
+            110
+          ]
+        },
+        {
+          "batch_size": 8,
+          "accuracy": 0.9711111111111111,
+          "time_ms_total_median": 50.07205600031739,
+          "time_ms_per_example": 0.11127123555626087,
+          "groups": 57,
+          "route_group_counts": [
+            17,
+            33,
+            7
+          ],
+          "route_example_counts": [
+            136,
+            264,
+            56
+          ]
+        },
+        {
+          "batch_size": 32,
+          "accuracy": 0.9777777777777777,
+          "time_ms_total_median": 15.046096999867586,
+          "time_ms_per_example": 0.03343577111081686,
+          "groups": 15,
+          "route_group_counts": [
+            3,
+            11,
+            1
+          ],
+          "route_example_counts": [
+            96,
+            352,
+            32
+          ]
+        },
+        {
+          "batch_size": 64,
+          "accuracy": 0.9822222222222222,
+          "time_ms_total_median": 9.128328999850055,
+          "time_ms_per_example": 0.020285175555222343,
+          "groups": 8,
+          "route_group_counts": [
+            1,
+            6,
+            1
+          ],
+          "route_example_counts": [
+            64,
+            384,
+            64
+          ]
+        },
+        {
+          "batch_size": 128,
+          "accuracy": 0.9844444444444445,
+          "time_ms_total_median": 6.006891000197356,
+          "time_ms_per_example": 0.013348646667105236,
+          "groups": 4,
+          "route_group_counts": [
+            0,
+            4,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        },
+        {
+          "batch_size": 256,
+          "accuracy": 0.9844444444444445,
+          "time_ms_total_median": 3.9969959998416016,
+          "time_ms_per_example": 0.008882213332981337,
+          "groups": 2,
+          "route_group_counts": [
+            0,
+            2,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "n_test": 450,
+      "fixed_accuracy": [
+        0.9644444444444444,
+        0.9644444444444444,
+        0.8711111111111111
+      ],
+      "fixed_total_ms_median": [
+        0.1803709997147962,
+        1.8140389997824968,
+        0.4918600002383755
+      ],
+      "rows": [
+        {
+          "batch_size": 1,
+          "accuracy": 0.9555555555555556,
+          "time_ms_total_median": 342.0011519997388,
+          "time_ms_per_example": 0.7600025599994196,
+          "groups": 450,
+          "route_group_counts": [
+            153,
+            217,
+            80
+          ],
+          "route_example_counts": [
+            153,
+            217,
+            80
+          ]
+        },
+        {
+          "batch_size": 8,
+          "accuracy": 0.9577777777777777,
+          "time_ms_total_median": 44.85476599984395,
+          "time_ms_per_example": 0.099677257777431,
+          "groups": 57,
+          "route_group_counts": [
+            21,
+            34,
+            2
+          ],
+          "route_example_counts": [
+            168,
+            272,
+            16
+          ]
+        },
+        {
+          "batch_size": 32,
+          "accuracy": 0.9622222222222222,
+          "time_ms_total_median": 15.5450679999376,
+          "time_ms_per_example": 0.03454459555541689,
+          "groups": 15,
+          "route_group_counts": [
+            3,
+            12,
+            0
+          ],
+          "route_example_counts": [
+            96,
+            384,
+            0
+          ]
+        },
+        {
+          "batch_size": 64,
+          "accuracy": 0.96,
+          "time_ms_total_median": 7.87512799979595,
+          "time_ms_per_example": 0.017500284443991,
+          "groups": 8,
+          "route_group_counts": [
+            2,
+            6,
+            0
+          ],
+          "route_example_counts": [
+            128,
+            384,
+            0
+          ]
+        },
+        {
+          "batch_size": 128,
+          "accuracy": 0.9622222222222222,
+          "time_ms_total_median": 5.304720999902202,
+          "time_ms_per_example": 0.01178826888867156,
+          "groups": 4,
+          "route_group_counts": [
+            1,
+            3,
+            0
+          ],
+          "route_example_counts": [
+            128,
+            384,
+            0
+          ]
+        },
+        {
+          "batch_size": 256,
+          "accuracy": 0.9644444444444444,
+          "time_ms_total_median": 3.9639040001020476,
+          "time_ms_per_example": 0.008808675555782328,
+          "groups": 2,
+          "route_group_counts": [
+            0,
+            2,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "n_test": 450,
+      "fixed_accuracy": [
+        0.9711111111111111,
+        0.9777777777777777,
+        0.9466666666666667
+      ],
+      "fixed_total_ms_median": [
+        0.27122799974677037,
+        1.7385460000696185,
+        0.511089000156062
+      ],
+      "rows": [
+        {
+          "batch_size": 1,
+          "accuracy": 0.9777777777777777,
+          "time_ms_total_median": 320.97311899997294,
+          "time_ms_per_example": 0.7132735977777176,
+          "groups": 450,
+          "route_group_counts": [
+            196,
+            206,
+            48
+          ],
+          "route_example_counts": [
+            196,
+            206,
+            48
+          ]
+        },
+        {
+          "batch_size": 8,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 48.789768000006006,
+          "time_ms_per_example": 0.10842170666668001,
+          "groups": 57,
+          "route_group_counts": [
+            22,
+            31,
+            4
+          ],
+          "route_example_counts": [
+            176,
+            248,
+            32
+          ]
+        },
+        {
+          "batch_size": 32,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 11.890009000126156,
+          "time_ms_per_example": 0.02642224222250257,
+          "groups": 15,
+          "route_group_counts": [
+            7,
+            8,
+            0
+          ],
+          "route_example_counts": [
+            224,
+            256,
+            0
+          ]
+        },
+        {
+          "batch_size": 64,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 6.972620999931678,
+          "time_ms_per_example": 0.015494713333181507,
+          "groups": 8,
+          "route_group_counts": [
+            3,
+            5,
+            0
+          ],
+          "route_example_counts": [
+            192,
+            320,
+            0
+          ]
+        },
+        {
+          "batch_size": 128,
+          "accuracy": 0.9711111111111111,
+          "time_ms_total_median": 3.021825999894645,
+          "time_ms_per_example": 0.006715168888654767,
+          "groups": 4,
+          "route_group_counts": [
+            3,
+            1,
+            0
+          ],
+          "route_example_counts": [
+            384,
+            128,
+            0
+          ]
+        },
+        {
+          "batch_size": 256,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 2.3618739996891236,
+          "time_ms_per_example": 0.0052486088881980525,
+          "groups": 2,
+          "route_group_counts": [
+            1,
+            1,
+            0
+          ],
+          "route_example_counts": [
+            256,
+            256,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 37,
+      "n_test": 450,
+      "fixed_accuracy": [
+        0.9688888888888889,
+        0.9733333333333334,
+        0.9133333333333333
+      ],
+      "fixed_total_ms_median": [
+        0.2206720000685891,
+        2.1308159998625342,
+        0.4375079997771536
+      ],
+      "rows": [
+        {
+          "batch_size": 1,
+          "accuracy": 0.9622222222222222,
+          "time_ms_total_median": 311.1231289999523,
+          "time_ms_per_example": 0.6913847311110052,
+          "groups": 450,
+          "route_group_counts": [
+            162,
+            258,
+            30
+          ],
+          "route_example_counts": [
+            162,
+            258,
+            30
+          ]
+        },
+        {
+          "batch_size": 8,
+          "accuracy": 0.9777777777777777,
+          "time_ms_total_median": 60.11800199985373,
+          "time_ms_per_example": 0.13359555999967496,
+          "groups": 57,
+          "route_group_counts": [
+            16,
+            40,
+            1
+          ],
+          "route_example_counts": [
+            128,
+            320,
+            8
+          ]
+        },
+        {
+          "batch_size": 32,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 16.497511999659764,
+          "time_ms_per_example": 0.0366611377770217,
+          "groups": 15,
+          "route_group_counts": [
+            1,
+            14,
+            0
+          ],
+          "route_example_counts": [
+            32,
+            448,
+            0
+          ]
+        },
+        {
+          "batch_size": 64,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 11.01182799993694,
+          "time_ms_per_example": 0.024470728888748756,
+          "groups": 8,
+          "route_group_counts": [
+            0,
+            8,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        },
+        {
+          "batch_size": 128,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 6.203544000072725,
+          "time_ms_per_example": 0.013785653333494944,
+          "groups": 4,
+          "route_group_counts": [
+            0,
+            4,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        },
+        {
+          "batch_size": 256,
+          "accuracy": 0.9733333333333334,
+          "time_ms_total_median": 4.089743000349699,
+          "time_ms_per_example": 0.009088317778554887,
+          "groups": 2,
+          "route_group_counts": [
+            0,
+            2,
+            0
+          ],
+          "route_example_counts": [
+            0,
+            512,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "n_test": 450,
+      "fixed_accuracy": [
+        0.96,
+        0.9711111111111111,
+        0.9422222222222222
+      ],
+      "fixed_total_ms_median": [
+        0.2226249998784624,
+        2.138286999979755,
+        0.5686260001311894
+      ],
+      "rows": [
+        {
+          "batch_size": 1,
+          "accuracy": 0.9688888888888889,
+          "time_ms_total_median": 334.92064600022786,
+          "time_ms_per_example": 0.7442681022227285,
+          "groups": 450,
+          "route_group_counts": [
+            220,
+            203,
+            27
+          ],
+          "route_example_counts": [
+            220,
+            203,
+            27
+          ]
+        },
+        {
+          "batch_size": 8,
+          "accuracy": 0.96,
+          "time_ms_total_median": 42.04015300001629,
+          "time_ms_per_example": 0.09342256222225842,
+          "groups": 57,
+          "route_group_counts": [
+            34,
+            22,
+            1
+          ],
+          "route_example_counts": [
+            272,
+            176,
+            8
+          ]
+        },
+        {
+          "batch_size": 32,
+          "accuracy": 0.96,
+          "time_ms_total_median": 13.509556999906636,
+          "time_ms_per_example": 0.030021237777570303,
+          "groups": 15,
+          "route_group_counts": [
+            7,
+            8,
+            0
+          ],
+          "route_example_counts": [
+            224,
+            256,
+            0
+          ]
+        },
+        {
+          "batch_size": 64,
+          "accuracy": 0.9688888888888889,
+          "time_ms_total_median": 8.281469999928959,
+          "time_ms_per_example": 0.018403266666508798,
+          "groups": 8,
+          "route_group_counts": [
+            3,
+            5,
+            0
+          ],
+          "route_example_counts": [
+            192,
+            320,
+            0
+          ]
+        },
+        {
+          "batch_size": 128,
+          "accuracy": 0.9711111111111111,
+          "time_ms_total_median": 4.315622999911284,
+          "time_ms_per_example": 0.009590273333136187,
+          "groups": 4,
+          "route_group_counts": [
+            2,
+            2,
+            0
+          ],
+          "route_example_counts": [
+            256,
+            256,
+            0
+          ]
+        },
+        {
+          "batch_size": 256,
+          "accuracy": 0.9711111111111111,
+          "time_ms_total_median": 2.6720099999693048,
+          "time_ms_per_example": 0.005937799999931788,
+          "groups": 2,
+          "route_group_counts": [
+            1,
+            1,
+            0
+          ],
+          "route_example_counts": [
+            256,
+            256,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "1": {
+      "accuracy": 0.9675555555555555,
+      "time_ms_per_example": 0.7444482239999262,
+      "positive_vs_best_fixed": 0
+    },
+    "8": {
+      "accuracy": 0.968,
+      "time_ms_per_example": 0.10927766444446105,
+      "positive_vs_best_fixed": 1
+    },
+    "32": {
+      "accuracy": 0.9693333333333334,
+      "time_ms_per_example": 0.03221699688866566,
+      "positive_vs_best_fixed": 0
+    },
+    "64": {
+      "accuracy": 0.9715555555555557,
+      "time_ms_per_example": 0.01923083377753048,
+      "positive_vs_best_fixed": 0
+    },
+    "128": {
+      "accuracy": 0.9724444444444444,
+      "time_ms_per_example": 0.011045602222212538,
+      "positive_vs_best_fixed": 0
+    },
+    "256": {
+      "accuracy": 0.9733333333333334,
+      "time_ms_per_example": 0.007593123111089679,
+      "positive_vs_best_fixed": 0
+    }
+  },
+  "integrity": "All routing uses router-split correctness predictors and test inputs only; no test labels or unselected specialist predictions are read before selection. Timing includes router plus selected specialist execution."
+}

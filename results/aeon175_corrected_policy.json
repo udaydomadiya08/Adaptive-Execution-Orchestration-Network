@@ -1,0 +1,118 @@
+{
+  "experiment": "AEON-1.75 corrected target-free stop audit of AEON-1.68 Diabetes complementarity",
+  "seeds": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "lambda": 0.035,
+  "costs": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "diabetes_complementary": {
+    "n": 442,
+    "rows": [
+      {
+        "seed": 7,
+        "best_fixed_mae": 41.968227312946674,
+        "aeon_mae": 42.47757532649673,
+        "aeon_cost": 1.5135135135135136,
+        "aeon_steps": 0.963963963963964,
+        "routes": [
+          64,
+          25,
+          18
+        ],
+        "seq_counts": {
+          "()": 4,
+          "(0,)": 64,
+          "(1,)": 25,
+          "(2,)": 18
+        }
+      },
+      {
+        "seed": 17,
+        "best_fixed_mae": 43.077660011896256,
+        "aeon_mae": 45.664288409075176,
+        "aeon_cost": 1.2162162162162162,
+        "aeon_steps": 0.8738738738738738,
+        "routes": [
+          68,
+          20,
+          9
+        ],
+        "seq_counts": {
+          "()": 14,
+          "(0,)": 68,
+          "(1,)": 20,
+          "(2,)": 9
+        }
+      },
+      {
+        "seed": 27,
+        "best_fixed_mae": 42.05492391385474,
+        "aeon_mae": 43.10295217501253,
+        "aeon_cost": 1.6846846846846846,
+        "aeon_steps": 0.972972972972973,
+        "routes": [
+          60,
+          17,
+          31
+        ],
+        "seq_counts": {
+          "()": 3,
+          "(0,)": 60,
+          "(1,)": 17,
+          "(2,)": 31
+        }
+      },
+      {
+        "seed": 37,
+        "best_fixed_mae": 45.80717559056307,
+        "aeon_mae": 45.81792240975883,
+        "aeon_cost": 1.3423423423423424,
+        "aeon_steps": 1.0,
+        "routes": [
+          88,
+          8,
+          15
+        ],
+        "seq_counts": {
+          "(0,)": 88,
+          "(1,)": 8,
+          "(2,)": 15
+        }
+      },
+      {
+        "seed": 47,
+        "best_fixed_mae": 45.55623308759486,
+        "aeon_mae": 45.793610950527416,
+        "aeon_cost": 1.2612612612612613,
+        "aeon_steps": 0.990990990990991,
+        "routes": [
+          94,
+          2,
+          14
+        ],
+        "seq_counts": {
+          "()": 1,
+          "(0,)": 94,
+          "(1,)": 2,
+          "(2,)": 14
+        }
+      }
+    ],
+    "means": {
+      "best_fixed_mae": 43.69284398337112,
+      "aeon_mae": 44.57126985417414,
+      "aeon_cost": 1.4036036036036037,
+      "aeon_steps": 0.9603603603603602
+    },
+    "positive_seeds": 0
+  },
+  "integrity_note": "Test-time stop/continue decisions use only controller-trained value models and executed specialist outputs; test targets are never read during routing."
+}
